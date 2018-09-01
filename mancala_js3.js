@@ -124,9 +124,9 @@ function topBeadHelper(overflowHelper, pitIndex){
 function helperBoardFunction(largeNumber){
 	smallerNumber = largeNumber - 13;
 	if(smallerNumber >= 0){
-		alert(smallerNumber);
+		//alert(smallerNumber);
 		board[smallerNumber] += 1;
-		alert(board[smallerNumber]);
+		//alert(board[smallerNumber]);
 	}
 }
 
