@@ -1,0 +1,44 @@
+<!DOCUMENT HTML>
+<html>
+<head>
+	<title>MANCALA</title>
+	<link type="text/css" rel="stylesheet" href="mancala_css.css">
+</head>
+<body onload="playerTurn(1);clickHandler();workToBeads();">
+<h1 style="text-align:center;padding-top:25px;">MANCALA</h1>
+<div id="turn" class="turn">Turn:&nbsp;<div id="playerTurn"></div></div><br><br><br>
+<div style="text-align:center;"><h2 style="margin:auto; float:left">Player One Score</h2>
+<h2 style="margin:auto; float:right">Player Two Score</h2></div> <br><br>
+<h3 id = "p1Score" style="margin:auto; float:left">0</h2>
+<h3 id = "p2Score" style="margin:auto; float:right">0</h2><br><br><br>
+<h3 style="margin:auto; text-align:center;"> Player 1 </h3>
+<div id="board" style="background-image: url('https://st4.cannypic.com/thumbs/34/349983_632_canny_pic.jpg');
+	background-repeat: no-repeat; background-size:100% 325px;">
+	<div id="pit13" class="scoreZone" style="float: left"></div><!-- left score zone -->
+	<div id="pit6" class="scoreZone" style="float: right"></div><!-- right score zone -->
+	<div id="TopPlayerRow">
+		<div id="pit12" class="pit"></div>
+		<div id="pit11" class="pit"></div>
+		<div id="pit10" class="pit"></div>
+		<div id="pit9" class="pit"></div>
+		<div id="pit8" class="pit"></div>
+		<div id="pit7" class="pit"></div>
+	</div>
+	<img src="https://assets.bigcartel.com/theme_images/29887915/APFC_Logo-02.png?auto=format&fit=max&w=400" style="height:115px; width:115px; 
+		display:block; margin-left:auto; margin-right:auto;">
+	<div id="BottomPlayerRow">
+		<div id="pit0" class="pit"></div>
+		<div id="pit1" class="pit"></div>
+		<div id="pit2" class="pit"></div>
+		<div id="pit3" class="pit"></div>
+		<div id="pit4" class="pit"></div>
+		<div id="pit5" class="pit"></div>
+	</div>
+</div>
+<h3 style="margin:auto; text-align:center;"> Player 2 </h3>
+<h2 id="message" style="margin:auto; text-align:center; padding-top:25px; padding-bottom:25px;"></h2>
+<button  id="restart" type="button" style="visibility: hidden; margin:auto;display:flex;" 
+	onClick="window.location.reload()">New Game?</button>
+<script type="text/javascript" src="mancala_js3.js"></script>
+</body>
+</html>
